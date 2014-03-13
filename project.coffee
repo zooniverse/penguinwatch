@@ -12,3 +12,14 @@ module.exports =
   summary: translate 'div', 'summary'
   description: translate 'div', 'description'
   background: 'penguins-fpo.jpg'
+
+  tasks:
+    penguins:
+      type: 'drawing'
+      question: translate 'div', 'whatToDo'
+      choices: [
+        value: 'point'
+        label: translate 'div', 'penguinLabel'
+      ]
+
+  firstTask: 'penguins'

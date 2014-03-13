@@ -3,3 +3,6 @@ module.exports =
   title: 'Penguin project'
   summary: 'Discover the penguins in your neighborhood!'
   description: 'This is a project about <strong>penguins</strong>.'
+
+  whatToDo: 'Click the penguins'
+  penguinLabel: 'Penguin'
