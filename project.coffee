@@ -21,5 +21,3 @@ module.exports =
         value: 'point'
         label: translate 'div', 'penguinLabel'
       ]
-
-  firstTask: 'penguins'
