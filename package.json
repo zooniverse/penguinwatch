@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "dependencies": {
     "t7e": "~0.3.1",
-    "zooniverse-readymade": "~0.0.2"
+    "zooniverse-readymade": "~0.0.4"
   },
   "scripts": {
-    "start": "zooniverse-readymade serve --port 3665"
+    "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --css ./penguin.styl"
   }
 }
