@@ -2,10 +2,14 @@
   "name": "penguins",
   "version": "0.0.1",
   "dependencies": {
+    "publisssh": "~0.2.4",
     "t7e": "~0.3.1",
     "zooniverse-readymade": "~0.0.4"
   },
   "scripts": {
-    "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --css ./penguin.styl"
+    "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --css ./penguin.styl",
+    "stage": "npm run build && publisssh ./build demo.zooniverse.org/penguins && npm run clean-up",
+    "build": "zooniverse-readymade build --output ./build --force",
+    "clean-up": "rm -rf ./build"
   }
 }
