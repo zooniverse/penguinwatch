@@ -5,4 +5,11 @@ module.exports =
   description: 'This is a project about <strong>penguins</strong>.'
 
   whatToDo: 'Click the penguins'
-  penguinLabel: 'Penguin'
+  choices:
+    penguin: 'Penguin'
+    chick: 'Chick'
+    eggs: 'Eggs'
+    other: 'Other'
+    seal: 'Seal'
+    shark: 'Shark'
+    walrus: 'Walrus'

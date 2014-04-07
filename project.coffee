@@ -17,7 +17,35 @@ module.exports =
     penguins:
       type: 'drawing'
       question: translate 'div', 'whatToDo'
-      choices: [
+      choices: [{
         value: 'point'
-        label: translate 'div', 'penguinLabel'
-      ]
+        label: translate 'div', 'choices.penguin'
+        color: 'gray'
+      }, {
+        value: 'point'
+        label: translate 'div', 'choices.eggs'
+        color: 'white'
+      }, {
+        value: 'point'
+        label: translate 'div', 'choices.chick'
+        color: 'yellow'
+      }, {
+        value: 'point'
+        label: translate 'div', 'choices.other'
+        color: 'orange'
+        details: [{
+          type: 'radio'
+          question: 'What is this?'
+          key: 'size'
+          choices: [{
+            value: 'walrus'
+            label: translate 'div', 'choices.seal'
+          }, {
+            value: 'seal'
+            label: translate 'div', 'choices.shark'
+          }, {
+            value: 'shark'
+            label: translate 'div', 'choices.walrus'
+          }]
+        }]
+      }]
