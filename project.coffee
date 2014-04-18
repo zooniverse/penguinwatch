@@ -1,3 +1,5 @@
+Pinpoint = require './pinpoint'
+
 t7e = require 't7e'
 enUs = require './en-us'
 t7e.load enUs
@@ -18,21 +20,21 @@ module.exports =
       type: 'drawing'
       question: translate 'div', 'whatToDo'
       choices: [{
-        value: 'point'
+        value: Pinpoint
         label: translate 'div', 'choices.penguin'
-        color: 'gray'
+        color: 'cyan'
       }, {
-        value: 'point'
+        value: Pinpoint
         label: translate 'div', 'choices.eggs'
-        color: 'white'
+        color: 'magenta'
       }, {
-        value: 'point'
+        value: Pinpoint
         label: translate 'div', 'choices.chick'
         color: 'yellow'
       }, {
-        value: 'point'
+        value: Pinpoint
         label: translate 'div', 'choices.other'
-        color: 'orange'
+        color: 'black'
         details: [{
           type: 'radio'
           question: 'What is this?'
