@@ -15,6 +15,10 @@ module.exports =
   description: translate 'div', 'description'
   background: 'penguins-fpo.jpg'
 
+  pages: [
+    {'Science': translate 'div', 'science'}
+  ]
+
   tasks:
     penguins:
       type: 'drawing'
