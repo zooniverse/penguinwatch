@@ -8,13 +8,13 @@ As top predators, penguins are considered sentinels of changes within the ecosys
 About Penguin Lifelines
 -----------------------
 
-<!--TODO: Logo-->
+![Penguin Lifelines](./penguin-lifelines.png)
 
 Since 2009, the Penguin Lifelines project at the University of Oxford (www.penguinlifelines.org) has sought to find novel solutions to the present data gaps, using satellite-linked cameras and genetic analysis. Together, these approaches have resulted in an integrated monitoring network that has the capacity to provide data to policy makers on areas particularly sensitive to fishing and human disturbance.
 
 Our camera-monitoring program currently consists of 50 cameras throughout the Southern Ocean and along the Antarctic Peninsula, overlooking colonies of Adélie, Gentoo, and Chinstrap penguins. The cameras take images of the penguins year-round and are able to determine the health of the colony by obtaining nest survival rates while also observing novel behaviors, such as why and where penguins spend their winter months.
 
-<!--TODO: Map-->
+![Map of camera sites](./site-map.png)
 
 Map of camera network in the Southern Ocean. Includes penguin colonies on the Falkland, South Georgia, and South Sandwich Islands and the Antarctic Peninsula.
 
@@ -27,13 +27,13 @@ Why cameras?
 
 Camera technology affords us the ability to deploy ‘virtual ecologists’ in hard-to-reach areas, or in places where human presence might disturb wildlife and therefore disrupt their behavior. By establishing a camera network in the Southern Ocean, a region of the world with harsh conditions year-round, we hope to capture novel behaviors and study penguin populations that have never before been observed because of their remote locations.
 
-<!--TODO: Photo-->
+![Camera setup](./camera-setup.png)
 
 _Camera overlooking Gentoo penguin colony on Petermann Island, Antarctica. Each camera unit consists of a trail camera set to time-lapse mode mounted on a scaffold pole, anchored by a basket of rocks._
 
 However, along with the infinite possibilities of cameras as a monitoring tool comes an enormous amount of data in the form of hundreds of thousands of images. Each of our 50 cameras takes between 8 to 96 images daily throughout the entire year. In order to turn this massive database of information into a data set we can use to answer hypotheses, we need your collective help.
 
-<!-- TODO: Photo-->
+![Example photo](./example-photo.png)
 
 _Condensed time-lapse video of Petermann Island penguin colony, taken from one of our cameras._
 
@@ -51,7 +51,7 @@ Specifically, we aim…
 
   * To determine changes in the timing of breeding of populations over time (eg. arrival and departure dates, hatching dates, incubation period, guard and post-guard periods).
 
-  <!--TODO: Lifecycle diagram-->
+![Breeding cycle](./breeding-cycle.png)
 
   _The annual life cycle of Chinstrap penguin, beginning with the summer breeding season where pairs mate, then incubate the eggs, followed by a period when chicks are closely guarded, and ending when chicks crèche, or form small groups away from their parents. After the adults moult, the penguins spend the winter months either at sea or on land._
 
