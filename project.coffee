@@ -48,14 +48,29 @@ module.exports =
           question: 'What is this?'
           key: 'size'
           choices: [{
-            value: 'walrus'
-            label: translate 'div', 'choices.seal'
-          }, {
-            value: 'seal'
-            label: translate 'div', 'choices.shark'
-          }, {
-            value: 'shark'
-            label: translate 'div', 'choices.walrus'
-          }]
+            value: 'snowySheathbill'
+            image: '//placehold.it/64.png'
+            label: translate 'div', 'choices.snowySheathbill'
+          },{
+            value: 'southernGiantPetrel'
+            image: '//placehold.it/64.png'
+            label: translate 'div', 'choices.southernGiantPetrel'
+          },{
+            value: 'brownSkua'
+            image: '//placehold.it/64.png'
+            label: translate 'div', 'choices.brownSkua'
+          },{
+            value: 'kelpGull'
+            image: '//placehold.it/64.png'
+            label: translate 'div', 'choices.kelpGull'
+          },{
+            value: 'humans'
+            image: '//placehold.it/64.png'
+            label: translate 'div', 'choices.humans'
+          },{
+            value: 'shipsVessels'
+            image: '//placehold.it/64.png'
+            label: translate 'div', 'choices.shipsVessels'
+          },]
         }]
       }]
