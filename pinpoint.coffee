@@ -4,8 +4,8 @@ class Pinpoint extends BasePoint
   scaledRadius: @::radius
 
   dragOffset:
-    x: -10
-    y: 20
+    x: 0
+    y: 30
 
   constructor: ->
     super
