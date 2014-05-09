@@ -1,49 +1,26 @@
 BasePoint = require 'zooniverse-readymade/lib/drawing-tools/point'
 
 class Pinpoint extends BasePoint
-  scaledRadius: @::radius
-
-  dragOffset:
-    x: 0
-    y: 30
-
   constructor: ->
     super
-
-    @ticks.el.style.display = 'none'
-    @disc.el.style.display = 'none'
-
-    @pin = @addShape 'path.pinpoint', stroke: 'currentColor', fill: 'transparent'
-    @addEvent 'move', 'path', @onMove
+    @disc.attr 'class', 'pinpoint'
 
   rescale: (scale) ->
     super
+    scaledRadius = @radius / scale
 
-    @scaledRadius = (@radius * 2) / scale
-    @scaledStrokeWidth = @strokeWidth / scale
+    # @ticks.attr
+    #   d: """
+    #     M #{-scaledRadius / 2} 0 L #{-scaledRadius / 4} 0 M #{scaledRadius / 2} 0 L #{scaledRadius / 4} 0
+    #     M 0 #{-scaledRadius} L 0 #{-scaledRadius / 3} M 0 #{scaledRadius} L 0 #{scaledRadius / 3}
+    #   """
 
-    @pin.attr
-      strokeWidth: @scaledStrokeWidth
-      d: """
-        M 0 0
-        C 0 #{@scaledRadius * (-25 / 100)} #{@scaledRadius * (-33 / 100)} #{@scaledRadius * (-45 / 100)} #{@scaledRadius * (-33 / 100)} #{@scaledRadius * (-67 / 100)}
-        S #{@scaledRadius * (-15 / 100)} #{@scaledRadius * (-100 / 100)} 0 #{@scaledRadius * (-100 / 100)}
-        S #{@scaledRadius * (33 / 100)} #{@scaledRadius * (-85 / 100)} #{@scaledRadius * (33 / 100)} #{@scaledRadius * (-67 / 100)}
-        S 0 #{@scaledRadius * (-25 / 100)} 0 0
-        Z
-      """
-
-  onMove: (e) ->
-    {x, y} = @coords e
-    x += @dragOffset.x
-    y += @dragOffset.y
-    @mark.set {x, y}
+    @disc.attr 'strokeWidth', 0
 
   render: ->
     super
-    {x, y} = @mark
-    x += @scaledRadius / 2
-    y -= @scaledRadius
-    @controls?.moveTo {x, y}
+    @controls.moveTo
+      x: @mark.x + 20
+      y: @mark.y
 
 module.exports = Pinpoint
