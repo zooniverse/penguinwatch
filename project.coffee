@@ -49,27 +49,27 @@ module.exports =
           key: 'size'
           choices: [{
             value: 'snowySheathbill'
-            image: '//placehold.it/64.png'
+            image: './other-animals/snowy-sheathbill.jpg'
             label: translate 'div', 'choices.snowySheathbill'
           },{
             value: 'southernGiantPetrel'
-            image: '//placehold.it/64.png'
+            image: './other-animals/southern-giant-petrel.jpg'
             label: translate 'div', 'choices.southernGiantPetrel'
           },{
             value: 'brownSkua'
-            image: '//placehold.it/64.png'
+            image: './other-animals/brown-skua.jpg'
             label: translate 'div', 'choices.brownSkua'
           },{
             value: 'kelpGull'
-            image: '//placehold.it/64.png'
+            image: './other-animals/kelp-gull.jpg'
             label: translate 'div', 'choices.kelpGull'
           },{
             value: 'humans'
-            image: '//placehold.it/64.png'
+            image: './other-animals/humans.jpg'
             label: translate 'div', 'choices.humans'
           },{
             value: 'shipsVessels'
-            image: '//placehold.it/64.png'
+            image: './other-animals/ships.jpg'
             label: translate 'div', 'choices.shipsVessels'
           },]
         }]
