@@ -27,7 +27,7 @@ Why cameras?
 
 Camera technology affords us the ability to deploy ‘virtual ecologists’ in hard-to-reach areas, or in places where human presence might disturb wildlife and therefore disrupt their behavior. By establishing a camera network in the Southern Ocean, a region of the world with harsh conditions year-round, we hope to capture novel behaviors and study penguin populations that have never before been observed because of their remote locations.
 
-![Camera setup](./camera-setup.png)
+![Camera setup](./camera-setup.jpg)
 
 _Camera overlooking Gentoo penguin colony on Petermann Island, Antarctica. Each camera unit consists of a trail camera set to time-lapse mode mounted on a scaffold pole, anchored by a basket of rocks._
 
