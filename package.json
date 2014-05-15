@@ -8,7 +8,7 @@
     "zooniverse-readymade": "~0.0.12"
   },
   "scripts": {
-    "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --js extension.coffee --css ./penguin.styl",
+    "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --js overrides.coffee --css ./penguin.styl",
     "stage": "npm run build && publisssh ./build demo.zooniverse.org/penguins && npm run clean-up",
     "build": "zooniverse-readymade build --force --output ./build --js extension.coffee --css ./penguin.styl",
     "clean-up": "rm -rf ./build"
