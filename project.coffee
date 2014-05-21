@@ -20,7 +20,7 @@ module.exports =
   ]
 
   tasks:
-    penguins:
+    marking:
       type: 'drawing'
       question: translate 'div', 'whatToDo'
       choices: [{
