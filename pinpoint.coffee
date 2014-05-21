@@ -7,20 +7,16 @@ class Pinpoint extends BasePoint
 
   rescale: (scale) ->
     super
-    scaledRadius = @radius / scale
-
-    # @ticks.attr
-    #   d: """
-    #     M #{-scaledRadius / 2} 0 L #{-scaledRadius / 4} 0 M #{scaledRadius / 2} 0 L #{scaledRadius / 4} 0
-    #     M 0 #{-scaledRadius} L 0 #{-scaledRadius / 3} M 0 #{scaledRadius} L 0 #{scaledRadius / 3}
-    #   """
-
     @disc.attr 'strokeWidth', 0
 
+  onMove: (e) ->
+    {x, y} = @coords e
+    @mark.set {x, y}
+
   render: ->
-    super
+    @attr 'transform', "translate(#{@mark.x}, #{@mark.y})"
     @controls.moveTo
-      x: @mark.x + 20
+      x: @mark.x + 30
       y: @mark.y
 
 module.exports = Pinpoint
