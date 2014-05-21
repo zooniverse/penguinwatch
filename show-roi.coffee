@@ -21,15 +21,15 @@ classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
   nestingOutline?.remove()
 
   $.when(roi).then (roi) ->
+    site = subject.metadata.path.split('/')[1].split('_')[0]
+
     {width, height} = classifyPage.subjectViewer.markingSurface.svg.el.viewBox.animVal
 
-    site = subject.metadata.site ? Object.keys(roi)[Math.floor Math.random() * Object.keys(roi).length]
-    nestingPoints = roi[site].reverse() # Assuming they're stored clockwise.
+    scaleX = subject.metadata.original_size.width / width
+    scaleY = subject.metadata.original_size.height / height
 
-    # TODO: Store original image dimensions on the subject so this can be calculated.
-    # Or just use lower quality, higher res images to start with.
-    scaleX = 1920 / width
-    scaleY = 1080 / height
+    # Reverse the points so they're counterclockwise and knock out the clockwise outer shape.
+    nestingPoints = roi[site].slice(0).reverse()
 
     nestingOutline = classifyPage.subjectViewer.markingSurface.addShape 'path.nesting-area',
       d: """
