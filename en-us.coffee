@@ -6,10 +6,10 @@ module.exports =
 
   science: require './content/science'
 
-  whatToDo: 'Click the penguins'
+  whatToDo: 'Choose a tool, then mark the image.'
   choices:
-    penguin: 'Penguin'
-    chick: 'Chick'
+    adult: 'Adults'
+    chick: 'Chicks'
     eggs: 'Eggs'
     other: 'Other'
     snowySheathbill: 'Snowy sheathbill'

@@ -25,19 +25,19 @@ module.exports =
       question: translate 'div', 'whatToDo'
       choices: [{
         type: Pinpoint
-        value: 'penguin'
-        label: translate 'div', 'choices.penguin'
+        value: 'adult'
+        label: translate 'div', 'choices.adult'
         color: '#f90'
-      }, {
-        type: Pinpoint
-        value: 'eggs'
-        label: translate 'div', 'choices.eggs'
-        color: '#ff0'
       }, {
         type: Pinpoint
         value: 'chick'
         label: translate 'div', 'choices.chick'
         color: '#9f0'
+      }, {
+        type: Pinpoint
+        value: 'eggs'
+        label: translate 'div', 'choices.eggs'
+        color: '#ff0'
       }, {
         type: Pinpoint
         value: 'other'
