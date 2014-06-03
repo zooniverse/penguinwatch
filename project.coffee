@@ -27,22 +27,22 @@ module.exports =
         type: Pinpoint
         value: 'penguin'
         label: translate 'div', 'choices.penguin'
-        color: 'cyan'
+        color: '#f90'
       }, {
         type: Pinpoint
         value: 'eggs'
         label: translate 'div', 'choices.eggs'
-        color: 'magenta'
+        color: '#ff0'
       }, {
         type: Pinpoint
         value: 'chick'
         label: translate 'div', 'choices.chick'
-        color: 'yellow'
+        color: '#9f0'
       }, {
         type: Pinpoint
         value: 'other'
         label: translate 'div', 'choices.other'
-        color: 'black'
+        color: '#09f'
         details: [{
           type: 'radio'
           question: 'What is this?'
