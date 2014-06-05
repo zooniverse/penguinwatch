@@ -33,8 +33,8 @@ classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
 
     nestingOutline = classifyPage.subjectViewer.markingSurface.addShape 'path.nesting-area',
       d: """
-        M -10 -10 L #{width + 10} -10 L #{width + 10} #{height + 10} L -10 #{height + 10}
-        L -10 -10
+        M 0 0 L #{width + 0} 0 L #{width + 0} #{height + 0} L 0 #{height + 0}
+        L 0 0
 
         M #{nestingPoints[0][0] / scaleX}, #{nestingPoints[0][1] / scaleY}
         #{("L #{[x / scaleX, y / scaleY]}" for [x, y] in nestingPoints[1...]).join '\n'}
