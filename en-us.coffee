@@ -18,3 +18,7 @@ module.exports =
     kelpGull: 'Kelp gull'
     humans: 'Humans'
     shipsVessels: 'Ships/vessels'
+
+  limitNumberOfMarks: '''
+    Thanks for your hard work, but you only need to mark 25 of any given thing per image!
+  '''
