@@ -23,5 +23,9 @@ module.exports =
     shipsVessels: 'Ships/vessels'
 
   limitNumberOfMarks: '''
-    Thanks for your hard work, but you only need to mark 25 of any given thing per image!
+    You've marked 25. Feel free to move on to the next image.
+    Several people will see each image, so we won't miss anything.<br /><br />
+    Thanks for your hard work!
   '''
+
+  limitNumberOfMarksDismiss: 'Got it'

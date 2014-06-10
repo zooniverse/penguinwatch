@@ -11,8 +11,8 @@ hasBeenOpened = false
 stopThatDialog = new Dialog
   warning: true
   content: """
-    <form><button type="button" name="close-dialog">&times;</button>
-    #{translate 'div', 'limitNumberOfMarks'}
+    <p>#{translate 'div', 'limitNumberOfMarks'}</p>
+    <div class="action">#{translate 'button', 'limitNumberOfMarksDismiss', name: 'close-dialog'}</div>
   """
 
 $(decisionTree.el).on decisionTree.RESET, ->
