@@ -74,3 +74,22 @@ module.exports =
           },]
         }]
       }]
+
+  tutorialSteps: [
+    {
+      image: '//placehold.it/500x200.png&text=Example image'
+      content: translate 'p', 'tutorial.welcome'
+    }, {
+      image: '//placehold.it/500x200.png&text=Selecting type, marking penguins'
+      content: translate 'p', 'tutorial.marking'
+    }, {
+      image: '//placehold.it/500x200.png&text=Removing existing marker'
+      content: translate 'p', 'tutorial.removing'
+    }, {
+      image: '//placehold.it/500x200.png&text=Marking other animals'
+      content: translate 'p', 'tutorial.other'
+    }, {
+      image: '//placehold.it/500x200.png&text=Talk screenshot'
+      content: translate 'p', 'tutorial.talk'
+    }
+  ]
