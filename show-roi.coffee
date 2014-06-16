@@ -17,8 +17,11 @@ roi = $.get('./roi.tsv').pipe (content) ->
 
 nestingOutline = null
 
+stopPropagation = (e) ->
+  e.stopPropagation()
+
 classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
-  nestingOutline?.remove()
+  nestingOutline?.destroy()
 
   $.when(roi).then (roi) ->
     site = subject.metadata.path.split('/')[1].split('_')[0]
@@ -41,5 +44,5 @@ classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
         L #{nestingPoints[0][0] / scaleX}, #{nestingPoints[0][1] / scaleY}
       """
 
-    # Bump it out of the main drawing group.
-    nestingOutline.el.parentNode.parentNode.appendChild nestingOutline.el
+    nestingOutline.addEvent 'mousedown', stopPropagation
+    nestingOutline.addEvent 'touchstart', stopPropagation
