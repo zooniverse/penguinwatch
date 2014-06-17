@@ -7,7 +7,10 @@ module.exports =
   classificationCount: 'images classified'
   userCount: 'volunteers participating'
 
-  science: require './content/science'
+  science: "
+    <section>#{require './content/science'}</section>
+    <section>#{require './content/science-sidebar'}</section>
+  "
 
   whatToDo: 'Choose a tool, then mark the image.'
   choices:

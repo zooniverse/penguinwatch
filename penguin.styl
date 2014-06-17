@@ -12,6 +12,43 @@
     .readymade-main-stack
       width: 95vw
 
+  [data-readymade-page="science"] > * // Translated element
+    background: rgba(white, 0.8)
+    color: black
+    display: flex
+    padding: 3em 5em
+
+    & > section
+      flex: 5
+
+      & + section
+        flex: 2
+        margin-left: 3vw
+
+    h1
+      margin: 0
+
+    figure
+      background: #fff
+      box-shadow: 0 1px 5px -3px black
+      margin: 3em 0
+      padding: 1vw
+
+      img,
+      video
+        width: 100%
+
+    figcaption
+      color: #666
+      font-size: 12px
+      font-weight: bold
+      text-align: center
+
+    img
+      display: block
+      margin: 0 auto
+      max-width: 100%
+
 .readymade-api-info-container
   display: inline-block
   margin: 0 1em
