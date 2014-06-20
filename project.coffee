@@ -77,16 +77,16 @@ module.exports =
 
   tutorialSteps: [
     {
-      image: '//placehold.it/500x200.png&text=Example image'
+      image: './tutorial/example.jpg'
       content: translate 'p', 'tutorial.welcome'
     }, {
-      image: '//placehold.it/500x200.png&text=Selecting type, marking penguins'
+      image: './tutorial/mark-penguins.jpg'
       content: translate 'p', 'tutorial.marking'
     }, {
-      image: '//placehold.it/500x200.png&text=Removing existing marker'
+      image: './tutorial/delete-mark.jpg'
       content: translate 'p', 'tutorial.removing'
     }, {
-      image: '//placehold.it/500x200.png&text=Marking other animals'
+      image: './tutorial/talk.jpg'
       content: translate 'p', 'tutorial.other'
     }, {
       image: '//placehold.it/500x200.png&text=Talk screenshot'
