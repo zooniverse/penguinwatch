@@ -86,10 +86,10 @@ module.exports =
       image: './tutorial/delete-mark.jpg'
       content: translate 'p', 'tutorial.removing'
     }, {
-      image: './tutorial/talk.jpg'
+      image: './tutorial/other.jpg'
       content: translate 'p', 'tutorial.other'
     }, {
-      image: '//placehold.it/500x200.png&text=Talk screenshot'
+      image: './tutorial/talk.jpg'
       content: translate 'p', 'tutorial.talk'
     }
   ]
