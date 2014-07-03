@@ -35,7 +35,7 @@ module.exports =
 
   tutorial:
     welcome: 'Penguin Watch is a citizen science website trying to understand the lives of penguins. We want you to help us mark images taken from nesting sites around Antarctica.'
-    marking: 'Mark penguins, chicks, or eggs by clicking on the image. We sometimes need you to mark up to 25 of each&thinsp;&mdash;&thinsp;and you can more more if you want to.'
+    marking: 'Individually mark penguins, chicks, and eggs in the image by clicking on the center of each one\'s visible area. Sometimes just a head or tail is showing, other times you\'ll be able to mark the center of the chest/torso. We sometimes need you to mark up to 25 of each&thinsp;&mdash;&thinsp;and you can more more if you want to.'
     removing: 'Remove marks by clicking them and using the black-and-white cross.'
     other: 'Mark any other animals too so we can see how often they are near the penguin nest.'
     talk: 'You can discuss the project with the science team and other volunteers by visiting Talk.'
