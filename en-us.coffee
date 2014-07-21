@@ -31,7 +31,7 @@ module.exports =
     shipsVessels: 'Ships/vessels'
 
   limitNumberOfMarks: '''
-    You've marked 25. Feel free to move on to the next image.
+    You've marked 30. Feel free to move on to the next image.
     Several people will see each image, so we won't miss anything.<br /><br />
     Thanks for your hard work!
   '''
@@ -44,7 +44,7 @@ module.exports =
 
   tutorial:
     welcome: 'Penguin Watch is a citizen science website trying to understand the lives of penguins. We want you to help us mark images taken from nesting sites around Antarctica.'
-    marking: 'Individually mark penguins, chicks, and eggs in the image by clicking on the center of each one\'s visible area. Sometimes just a head or tail is showing, other times you\'ll be able to mark the center of the chest/torso. We sometimes need you to mark up to 25 of each&thinsp;&mdash;&thinsp;and you can mark more if you want to.'
+    marking: 'Individually mark penguins, chicks, and eggs in the image by clicking on the center of each one\'s visible area. Sometimes just a head or tail is showing, other times you\'ll be able to mark the center of the chest/torso. We sometimes need you to mark up to 30 of each&thinsp;&mdash;&thinsp;and you can mark more if you want to.'
     removing: 'Remove marks by clicking them and using the black-and-white cross.'
     other: 'Mark any other animals too so we can see how often they are near the penguin nest.'
     talk: 'You can discuss the project with the science team and other volunteers by visiting Talk.'

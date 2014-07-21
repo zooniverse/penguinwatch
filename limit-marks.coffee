@@ -4,7 +4,7 @@ translate = require 't7e'
 
 {decisionTree, subjectViewer} = currentProject.classifyPages[0]
 
-LIMIT = 25
+LIMIT = 30
 
 hasBeenOpened = false
 
@@ -24,6 +24,3 @@ subjectViewer.el.on 'add-tool', ({originalEvent: detail: [ms, tool]}) ->
   if count > LIMIT
     stopThatDialog.show() unless hasBeenOpened
     hasBeenOpened = true
-
-    # setTimeout ->
-    #   tool.mark.destroy()
