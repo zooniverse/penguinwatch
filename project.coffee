@@ -19,7 +19,24 @@ module.exports =
     {'Science': translate 'div', 'science'}
   ]
 
+  firstTask: 'animalsPresent'
+
   tasks:
+    animalsPresent:
+      type: 'radio'
+      question: translate 'div', 'anyAnimals'
+      choices: [{
+        value: 'yes'
+        label: translate 'div', 'yesAnimals'
+        next: 'marking'
+      }, {
+        value: 'no'
+        label: translate 'div', 'noAnimals'
+      }, {
+        value: 'cant_tell'
+        label: translate 'div', 'cantTellAnimals'
+      }]
+
     marking:
       type: 'drawing'
       question: translate 'div', 'whatToDo'
@@ -51,28 +68,40 @@ module.exports =
             value: 'snowySheathbill'
             image: './other-animals/snowy-sheathbill.jpg'
             label: translate 'div', 'choices.snowySheathbill'
-          },{
+          }, {
             value: 'southernGiantPetrel'
             image: './other-animals/southern-giant-petrel.jpg'
             label: translate 'div', 'choices.southernGiantPetrel'
-          },{
+          }, {
             value: 'brownSkua'
             image: './other-animals/brown-skua.jpg'
             label: translate 'div', 'choices.brownSkua'
-          },{
+          }, {
             value: 'kelpGull'
             image: './other-animals/kelp-gull.jpg'
             label: translate 'div', 'choices.kelpGull'
-          },{
+          }, {
             value: 'humans'
             image: './other-animals/humans.jpg'
             label: translate 'div', 'choices.humans'
-          },{
+          }, {
             value: 'shipsVessels'
             image: './other-animals/ships.jpg'
             label: translate 'div', 'choices.shipsVessels'
-          },]
+          }]
         }]
+      }]
+      next: 'allPenguinsMarked'
+
+    allPenguinsMarked:
+      type: 'radio'
+      question: translate 'div', 'allMarked'
+      choices: [{
+        value: 'finished'
+        label: translate 'div', 'yesAllMarked'
+      }, {
+        value: 'unfinished'
+        label: translate 'div', 'notAllMarked'
       }]
 
   tutorialSteps: [

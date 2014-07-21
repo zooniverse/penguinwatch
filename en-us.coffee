@@ -12,7 +12,12 @@ module.exports =
     <section>#{require './content/science-sidebar'}</section>
   "
 
-  whatToDo: 'Choose a tool, then mark the image.'
+  anyAnimals: 'Are there any penguins or other animals in this image?'
+  yesAnimals: 'Yes'
+  noAnimals: 'No, there are no animals present'
+  cantTellAnimals: 'I can\'t tell'
+
+  whatToDo: 'For each type of animals in the image, select it from the list, then click to mark its center.'
   choices:
     adult: 'Adults'
     chick: 'Chicks'
@@ -32,6 +37,10 @@ module.exports =
   '''
 
   limitNumberOfMarksDismiss: 'Got it'
+
+  allMarked: 'Have you marked every penguin you can see in this image, or are there still some left unmarked?'
+  yesAllMarked: 'I have marked every penguin'
+  notAllMarked: 'There were too many penguins to mark'
 
   tutorial:
     welcome: 'Penguin Watch is a citizen science website trying to understand the lives of penguins. We want you to help us mark images taken from nesting sites around Antarctica.'
