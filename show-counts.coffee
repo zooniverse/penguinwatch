@@ -9,11 +9,12 @@ classifyPage = currentProject.classifyPages[0]
 
 badges = {}
 
-$(decisionTree.el).one decisionTree.RESET, ->
-  labels = $(decisionTree.el).find '.readymade-choice-label'
-  for choice, i in decisionTree.currentTask.choices
-    badges[choice.value] = $('<span class="count-badge" data-count="0">0</span>')
-    badges[choice.value].insertAfter labels[i]
+$(decisionTree.el).on decisionTree.LOAD_TASK, ({originalEvent: detail: {task}}) ->
+  if task.type is 'drawing'
+    labels = $(decisionTree.el).find '[data-task-type="drawing"] .readymade-choice-label'
+    for choice, i in task.choices
+      badges[choice.value] = $('<span class="count-badge" data-count="0">0</span>')
+      badges[choice.value].insertAfter labels[i]
 
 subjectViewer.el.on 'add-tool', ({originalEvent: detail: [ms, tool]}) ->
   count = parseFloat(badges[tool.value].html()) + 1
