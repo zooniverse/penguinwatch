@@ -1,4 +1,5 @@
 Pinpoint = require './pinpoint'
+MagnifierPoint = require 'marking-surface/lib/tools/magnifier-point'
 
 t7e = require 't7e'
 enUs = require './en-us'
@@ -41,7 +42,7 @@ module.exports =
       type: 'drawing'
       question: translate 'div', 'whatToDo'
       choices: [{
-        type: Pinpoint
+        type: MagnifierPoint
         value: 'adult'
         label: translate 'div', 'choices.adult'
         color: '#f90'
