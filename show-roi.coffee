@@ -34,7 +34,7 @@ classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
     # Reverse the points so they're counterclockwise and knock out the clockwise outer shape.
     nestingPoints = roi[site].slice(0).reverse()
 
-    nestingOutline = classifyPage.subjectViewer.markingSurface.addShape 'path.nesting-area',
+    nestingOutline = classifyPage.subjectViewer.markingSurface.svg.addShape 'path.nesting-area',
       d: """
         M 0 0 L #{width + 0} 0 L #{width + 0} #{height + 0} L 0 #{height + 0}
         L 0 0
@@ -46,3 +46,5 @@ classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
 
     nestingOutline.addEvent 'mousedown', stopPropagation
     nestingOutline.addEvent 'touchstart', stopPropagation
+    nestingOutline.addEvent 'mousemove', stopPropagation
+    nestingOutline.addEvent 'touchmove', stopPropagation
