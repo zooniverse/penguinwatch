@@ -1,7 +1,8 @@
 currentProject = require 'zooniverse-readymade/current-project'
 $ = window.jQuery
 
-classifyPage = currentProject.classifyPages[0]
+{decisionTree} = currentProject.classifyPages[0]
 
-classifyPage.on classifyPage.LOAD_SUBJECT, ->
-  $('input[name="marking"][value="adult"]').click()
+$(decisionTree.el).on decisionTree.LOAD_TASK, ({originalEvent: detail: {task}}) ->
+  if task.type is 'drawing'
+    $('input[name="marking"][value="adult"]').click()
