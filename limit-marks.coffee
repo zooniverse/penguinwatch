@@ -3,6 +3,7 @@ Dialog = require 'zooniverse/controllers/dialog'
 translate = require 't7e'
 
 {decisionTree, subjectViewer} = currentProject.classifyPages[0]
+markingSurface = subjectViewer.markingSurface
 
 LIMIT = 30
 
@@ -18,8 +19,8 @@ stopThatDialog = new Dialog
 $(decisionTree.el).on decisionTree.RESET, ->
   hasBeenOpened = false
 
-subjectViewer.el.on 'add-tool', ({originalEvent: detail: [ms, tool]}) ->
-  count = (true for {mark} in ms.tools when mark.value is tool.mark.value).length
+markingSurface.on 'marking-surface:add-tool', (tool) ->
+  count = (true for {mark} in markingSurface.tools when mark.value is tool.mark.value).length
 
   if count > LIMIT
     stopThatDialog.show() unless hasBeenOpened
