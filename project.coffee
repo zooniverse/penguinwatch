@@ -47,17 +47,17 @@ module.exports =
         label: translate 'div', 'choices.adult'
         color: '#f90'
       }, {
-        type: Pinpoint
+        type: MagnifierPoint
         value: 'chick'
         label: translate 'div', 'choices.chick'
         color: '#9f0'
       }, {
-        type: Pinpoint
+        type: MagnifierPoint
         value: 'eggs'
         label: translate 'div', 'choices.eggs'
         color: '#ff0'
       }, {
-        type: Pinpoint
+        type: MagnifierPoint
         value: 'other'
         label: translate 'div', 'choices.other'
         color: '#09f'
