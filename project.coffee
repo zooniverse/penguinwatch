@@ -98,10 +98,10 @@ module.exports =
       type: 'radio'
       question: translate 'div', 'allMarked'
       choices: [{
-        value: 'finished'
+        value: 'complete'
         label: translate 'div', 'yesAllMarked'
       }, {
-        value: 'unfinished'
+        value: 'incomplete'
         label: translate 'div', 'notAllMarked'
       }]
 
