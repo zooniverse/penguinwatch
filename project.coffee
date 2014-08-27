@@ -105,21 +105,19 @@ module.exports =
         label: translate 'div', 'notAllMarked'
       }]
 
-  tutorialSteps: [
-    {
-      image: './tutorial/example.jpg'
-      content: translate 'p', 'tutorial.welcome'
-    }, {
-      image: './tutorial/mark-penguins.jpg'
-      content: translate 'p', 'tutorial.marking'
-    }, {
-      image: './tutorial/delete-mark.jpg'
-      content: translate 'p', 'tutorial.removing'
-    }, {
-      image: './tutorial/other.jpg'
-      content: translate 'p', 'tutorial.other'
-    }, {
-      image: './tutorial/talk.jpg'
-      content: translate 'p', 'tutorial.talk'
-    }
-  ]
+  tutorialSteps: [{
+    image: './tutorial/example.jpg'
+    content: translate 'p', 'tutorial.welcome'
+  }, {
+    image: './tutorial/mark-penguins.jpg'
+    content: translate 'p', 'tutorial.marking'
+  }, {
+    image: './tutorial/delete-mark.jpg'
+    content: translate 'p', 'tutorial.removing'
+  }, {
+    image: './tutorial/other.jpg'
+    content: translate 'p', 'tutorial.other'
+  }, {
+    image: './tutorial/talk.jpg'
+    content: translate 'p', 'tutorial.talk'
+  }]
