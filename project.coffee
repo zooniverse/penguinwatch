@@ -57,7 +57,7 @@ module.exports =
         label: translate 'div', 'choices.eggs'
         color: '#ff0'
       }, {
-        type: MagnifierPoint
+        type: 'point'
         value: 'other'
         label: translate 'div', 'choices.other'
         color: '#09f'
