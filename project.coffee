@@ -106,13 +106,13 @@ module.exports =
       }]
 
   tutorialSteps: [{
-    image: './tutorial/example.jpg'
+    image: './tutorial/intro.jpg'
     content: translate 'p', 'tutorial.welcome'
   }, {
-    image: './tutorial/mark-penguins.jpg'
+    image: './tutorial/marked.jpg'
     content: translate 'p', 'tutorial.marking'
   }, {
-    image: './tutorial/delete-mark.jpg'
+    image: './tutorial/marked.jpg'
     content: translate 'p', 'tutorial.removing'
   }, {
     image: './tutorial/other.jpg'
