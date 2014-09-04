@@ -16,4 +16,4 @@ We need your help annotating the hundreds of thousands of images taken over the 
 
 Ultimately, we hope that our research can directly feed into policy as we build evidence to determine important regions for penguins and highlight specific colonies of concern. There is growing support for Marine Protected Areas (MPA) at our study areas, which would protect penguins by restricting fisheries activities, but we must first fill in gaps in our understanding of the species distributions and behaviors.
 
-Can you help? [Donate](#)
+Can you help? [Donate](https://www.campaign.ox.ac.uk/page.aspx?pid=3091)
