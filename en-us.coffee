@@ -48,3 +48,11 @@ module.exports =
     removing: 'Remove marks by clicking them and using the black-and-white cross.'
     other: 'Mark any other animals too so we can see how often they are near the penguin nest.'
     talk: 'You can discuss the project with the science team and other volunteers by visiting Talk.'
+
+  fieldGuide:
+    gentoo: 'Gentoo'
+    chinstrap: 'Chinstrap'
+    adelie: 'Adélie'
+    king: 'King'
+    adult: 'Adult'
+    chick: 'Chick'

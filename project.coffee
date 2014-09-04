@@ -121,3 +121,41 @@ module.exports =
     image: './tutorial/talk.jpg'
     content: translate 'p', 'tutorial.talk'
   }]
+
+  examples: [{
+    label: translate 'span', 'fieldGuide.gentoo'
+    figures: [{
+      image: './field-guide/gentoo-guarded.png'
+      label: translate 'span', 'fieldGuide.adult'
+    }, {
+      image: './field-guide/gentoo-unguarded.png'
+      label: translate 'span', 'fieldGuide.chick'
+    }]
+  }, {
+    label: translate 'span', 'fieldGuide.chinstrap'
+    figures: [{
+      image: './field-guide/chinstrap-guarded.jpg'
+      label: translate 'span', 'fieldGuide.adult'
+    }, {
+      image: './field-guide/chinstrap-unguarded.png'
+      label: translate 'span', 'fieldGuide.chick'
+    }]
+  }, {
+    label: translate 'span', 'fieldGuide.adelie'
+    figures: [{
+      image: './field-guide/adelie-guarded.png'
+      label: translate 'span', 'fieldGuide.adult'
+    }, {
+      image: './field-guide/adelie-unguarded.png'
+      label: translate 'span', 'fieldGuide.chick'
+    }]
+  }, {
+    label: translate 'span', 'fieldGuide.king'
+    figures: [{
+      image: './field-guide/king-guarded.png'
+      label: translate 'span', 'fieldGuide.adult'
+    }, {
+      image: './field-guide/king-unguarded.png'
+      label: translate 'span', 'fieldGuide.chick'
+    }]
+  }]
