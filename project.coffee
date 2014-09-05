@@ -20,6 +20,16 @@ module.exports =
     {'Science': translate 'div', 'science'}
   ]
 
+  scientists: [{
+    name: 'Andrew Zisserman'
+  }, {
+    name: 'Caitlin Black'
+  }, {
+    name: 'Tom Hart'
+  }, {
+    name: 'Yusuf Aytar'
+  }]
+
   developers: [{
     name: "Adam McMaster"
     title: "Infrastructure Engineer"
