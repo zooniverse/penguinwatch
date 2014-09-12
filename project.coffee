@@ -7,6 +7,12 @@ t7e.load enUs
 
 translate = t7e
 
+# Let's make translating keys easier.
+buildObject = (fn) ->
+  object = {}
+  fn.call object
+  object
+
 module.exports =
   id: 'penguin'
 
@@ -19,6 +25,12 @@ module.exports =
   pages: [
     {'Science': translate 'div', 'science'}
   ]
+
+  externalLinks: buildObject ->
+    @[translate 'span', 'links.blog'] = 'http://blog.penguinwatch.org/'
+    @[translate 'span', 'links.twitter'] = 'http://twitter.com/penguin_watch/'
+    @[translate 'span', 'links.facebook'] = '#TODO'
+    @[translate 'span', 'links.google'] = '#TODO'
 
   organizations: [{
     name: 'Penguin Lifelines'
