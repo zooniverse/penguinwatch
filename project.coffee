@@ -27,10 +27,10 @@ module.exports =
   ]
 
   externalLinks: buildObject ->
-    @[translate 'span', 'links.blog'] = 'http://blog.penguinwatch.org/'
+    @[translate 'span', 'links.blog'] = 'http://penguinlifelines.wordpress.com/'
     @[translate 'span', 'links.twitter'] = 'http://twitter.com/penguin_watch/'
-    @[translate 'span', 'links.facebook'] = '#TODO'
-    @[translate 'span', 'links.google'] = '#TODO'
+    @[translate 'span', 'links.facebook'] = 'https://www.facebook.com/PenguinZoo'
+    @[translate 'span', 'links.google'] = 'https://plus.google.com/u/1/112444605806295376760/posts'
 
   organizations: [{
     name: 'Penguin Lifelines'
