@@ -22,6 +22,7 @@ stopPropagation = (e) ->
 
 classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
   nestingOutline?.destroy()
+  nestingOutline = null
 
   $.when(roi).then (roi) ->
     site = subject.metadata.path.split('/')[1].split('_')[0]
@@ -32,19 +33,20 @@ classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
     scaleY = subject.metadata.original_size.height / height
 
     # Reverse the points so they're counterclockwise and knock out the clockwise outer shape.
-    nestingPoints = roi[site].slice(0).reverse()
+    nestingPoints = roi[site]?.slice(0).reverse()
 
-    nestingOutline = classifyPage.subjectViewer.markingSurface.svg.addShape 'path.nesting-area',
-      d: """
-        M 0 0 L #{width + 0} 0 L #{width + 0} #{height + 0} L 0 #{height + 0}
-        L 0 0
+    if nestingPoints?
+      nestingOutline = classifyPage.subjectViewer.markingSurface.svg.addShape 'path.nesting-area',
+        d: """
+          M 0 0 L #{width + 0} 0 L #{width + 0} #{height + 0} L 0 #{height + 0}
+          L 0 0
 
-        M #{nestingPoints[0][0] / scaleX}, #{nestingPoints[0][1] / scaleY}
-        #{("L #{[x / scaleX, y / scaleY]}" for [x, y] in nestingPoints[1...]).join '\n'}
-        L #{nestingPoints[0][0] / scaleX}, #{nestingPoints[0][1] / scaleY}
-      """
+          M #{nestingPoints[0][0] / scaleX}, #{nestingPoints[0][1] / scaleY}
+          #{("L #{[x / scaleX, y / scaleY]}" for [x, y] in nestingPoints[1...]).join '\n'}
+          L #{nestingPoints[0][0] / scaleX}, #{nestingPoints[0][1] / scaleY}
+        """
 
-    nestingOutline.addEvent 'mousedown', stopPropagation
-    nestingOutline.addEvent 'touchstart', stopPropagation
-    nestingOutline.addEvent 'mousemove', stopPropagation
-    nestingOutline.addEvent 'touchmove', stopPropagation
+      nestingOutline.addEvent 'mousedown', stopPropagation
+      nestingOutline.addEvent 'touchstart', stopPropagation
+      nestingOutline.addEvent 'mousemove', stopPropagation
+      nestingOutline.addEvent 'touchmove', stopPropagation
