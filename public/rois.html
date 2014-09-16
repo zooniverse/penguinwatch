@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ROIs</title>
+    <style>
+      svg {
+        border: 1px solid;
+      }
+      </style>
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+      var container = document.getElementById('container');
+      $.get('./roi.tsv').then(function(rois) {
+        rois.split('\n').slice(1).forEach(function(siteAndPoints) {
+          siteAndPoints = siteAndPoints.split('\t');
+          var site = siteAndPoints[0];
+
+          var width = 0;
+          var height = 0;
+          var pathCommands = siteAndPoints.slice(1).map(function(points, i) {
+            if (points === '') {return false;}
+            points = points.split(/\,\s*/);
+            width = Math.max(width, points[0]);
+            height = Math.max(height, points[1]);
+
+            var command = 'L';
+            if (i === 0) {command = 'M';}
+            return command + points.join(',');
+          }).filter(Boolean).join(' ');
+
+          var svg = document.createElementNS(null, 'svg');
+          svg.setAttributeNS(null, 'viewBox', [0, 0, width, height].join(' '));
+          svg.setAttributeNS(null, 'width', 64);
+          svg.setAttributeNS(null, 'height', 48);
+
+          var path = document.createElementNS(null, 'path');
+          path.setAttributeNS(null, 'd', pathCommands);
+          svg.appendChild(path);
+
+          container.insertAdjacentHTML('beforeend', site + ': ' + svg.outerHTML + '\n');
+        });
+      });
+    </script>
+  </body>
+</html>
