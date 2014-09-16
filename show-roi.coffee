@@ -15,7 +15,7 @@ rois = $.get('./roi.tsv').pipe (content) ->
 
   result
 
-preScaledROIs = ['bech1', 'bech3', 'ESTAa', 'gard1', 'gard2', 'magn1', 'wlch2']
+preScaledROIs = [] # Not currently used.
 
 nestingOutline = null
 
