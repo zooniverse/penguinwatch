@@ -2,7 +2,7 @@ $ = window.jQuery
 project = require 'zooniverse-readymade/current-project'
 classifyPage = project.classifyPages[0]
 
-roi = $.get('./roi.tsv').pipe (content) ->
+rois = $.get('./roi.tsv').pipe (content) ->
   result = {}
 
   rows = content.split('\n').slice(1).filter Boolean
@@ -15,6 +15,8 @@ roi = $.get('./roi.tsv').pipe (content) ->
 
   result
 
+preScaledROIs = ['bech1', 'bech3', 'ESTAa', 'gard1', 'gard2', 'magn1', 'wlch2']
+
 nestingOutline = null
 
 stopPropagation = (e) ->
@@ -24,16 +26,19 @@ classifyPage.on classifyPage.LOAD_SUBJECT, (e, subject) ->
   nestingOutline?.destroy()
   nestingOutline = null
 
-  $.when(roi).then (roi) ->
+  $.when(rois).then (rois) ->
     site = subject.metadata.path.split('/')[1].split('_')[0]
 
     {width, height} = classifyPage.subjectViewer.markingSurface.svg.el.viewBox.animVal
 
-    scaleX = subject.metadata.original_size.width / width
-    scaleY = subject.metadata.original_size.height / height
+    if site in preScaledROIs
+      [scaleX, scaleY] = [1, 1]
+    else
+      scaleX = subject.metadata.original_size.width / width
+      scaleY = subject.metadata.original_size.height / height
 
     # Reverse the points so they're counterclockwise and knock out the clockwise outer shape.
-    nestingPoints = roi[site]?.slice(0).reverse()
+    nestingPoints = rois[site]?.slice(0).reverse()
 
     if nestingPoints?
       nestingOutline = classifyPage.subjectViewer.markingSurface.svg.addShape 'path.nesting-area',
