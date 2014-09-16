@@ -110,30 +110,25 @@ module.exports =
   developers: [{
     name: 'Adam McMaster'
     title: 'Infrastructure Engineer'
-    location: 'Oxford, UK'
     url: 'https://twitter.com/astopy'
     description: '''Adam is responsible for managing the Zooniverse’s web hosting infrastructure. He has a computer science degree and has worked in web hosting and development for many years. He’s also working on a degree in astronomy with the OU.'''
   }, {
     name: 'Brian Carstensen'
     title: 'UX Developer'
-    location: 'Oxford, UK'
     url: 'https://twitter.com/__brian_c__'
     description: '''Brian Carstensen recently moved from Chicago to Oxford. Brian has a degree in graphic design from Columbia College in Chicago, and worked in that field for a number of years before finding a niche in web development.'''
   }, {
     name: 'Campbell Allen'
     title: 'Developer'
-    location: 'Oxford, UK'
     description: '''Web developer for the Zooniverse, enjoys building things on the internet while listening to funky tunes.'''
   }, {
     name: 'Chris Lintott'
     title: 'Zooniverse PI'
-    location: 'Oxford, UK'
     url: 'https://twitter.com/chrislintott'
     description: '''Astronomer and founder of both Galaxy Zoo and the Zooniverse that grew from it, Chris is interested in how galaxies form and evolve, how citizen science can change the world, and whether the Chicago Fire can get their act together.'''
   }, {
     name: 'Robert Simpson'
     title: 'Researcher and Developer'
-    location: 'Oxford, UK'
     url: 'https://twitter.com/orbitingfrog'
     description: '''Robert is a researcher and web developer working in Oxford. He has a PhD is in astrophysics from Cardiff and has been hacking astronomy since 2004. He is the Communications Lead for the Zooniverse and is also PI of the Milky Way Project.'''
   }]
