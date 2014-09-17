@@ -5,6 +5,7 @@ module.exports =
   description: 'Scientists have travelled to some of the coldest areas on the planet to learn more about penguin populations. Help annotate their images of wildlife in Antarctica and the Southern Ocean.'
 
   links:
+    talk: 'Discuss'
     blog: 'Blog'
     twitter: '<i class="fa fa-twitter fa-lg"></i>'
     facebook: '<i class="fa fa-facebook-square fa-lg"></i>'
