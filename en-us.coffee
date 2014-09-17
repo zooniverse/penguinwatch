@@ -61,5 +61,6 @@ module.exports =
     chinstrap: 'Chinstrap'
     adelie: 'Adélie'
     king: 'King'
+    rockhopper: 'Rockhopper'
     adult: 'Adult'
     chick: 'Chick'

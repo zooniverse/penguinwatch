@@ -272,4 +272,13 @@ module.exports =
       image: './field-guide/king-unguarded.png'
       label: translate 'span', 'fieldGuide.chick'
     }]
+  }, {
+    label: translate 'span', 'fieldGuide.rockhopper'
+    figures: [{
+      image: './field-guide/rockhopper-guarded.jpg'
+      label: translate 'span', 'fieldGuide.adult'
+    }, {
+      image: './field-guide/rockhopper-unguarded.jpg'
+      label: translate 'span', 'fieldGuide.chick'
+    }]
   }]
