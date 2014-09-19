@@ -3,7 +3,7 @@ $ = window.jQuery
 
 classifyPage = currentProject.classifyPages[0]
 {subjectViewer, decisionTree} = classifyPage
-markingSurface = subjectViewer.markingSurface
+{markingSurface} = subjectViewer
 decisionTreeEl = $(decisionTree.el)
 
 window.dt = decisionTree
@@ -13,19 +13,24 @@ window.dt = decisionTree
 
 badges = {}
 
+getCount = (value) ->
+  (mark for {mark} in markingSurface.tools when mark.value is value).length
+
 decisionTreeEl.on decisionTree.LOAD_TASK, ({originalEvent: detail: {task}}) ->
   if task.type is 'drawing'
     labels = decisionTreeEl.find '[data-task-type="drawing"] .readymade-choice-label'
-    for choice, i in task.choices
-      badges[choice.value] = $('<span class="count-badge" data-count="0">0</span>')
-      badges[choice.value].insertAfter labels[i]
+    for {value}, i in task.choices
+      count = getCount value
+      badges[value]?.remove()
+      badges[value] = $("<span class='count-badge' data-count='#{count}'>#{count}</span>")
+      badges[value].insertAfter labels[i]
 
 markingSurface.on 'marking-surface:add-tool', (tool) ->
-  count = parseFloat(badges[tool.mark.value].html()) + 1
+  count = getCount tool.mark.value
   badges[tool.mark.value].html count
   badges[tool.mark.value].attr 'data-count', count
 
 markingSurface.on 'marking-surface:remove-tool', (tool) ->
-  count = parseFloat(badges[tool.mark.value].html()) - 1
+  count = getCount tool.mark.value
   badges[tool.mark.value].html count
   badges[tool.mark.value].attr 'data-count', count
