@@ -203,10 +203,6 @@ module.exports =
             value: 'shipsVessels'
             image: './other-animals/ships.jpg'
             label: translate 'div', 'choices.shipsVessels'
-          }, {
-            value: 'other'
-            image: './other-animals/other.png'
-            label: translate 'div', 'choices.other'
           }]
         }]
       }]
