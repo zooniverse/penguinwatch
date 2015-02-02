@@ -13,6 +13,9 @@ buildObject = (fn) ->
   fn.call object
   object
 
+# decision tree button text
+ok = translate 'span', 'ok'
+
 module.exports =
   id: 'penguin'
 
@@ -139,6 +142,7 @@ module.exports =
   tasks:
     animalsPresent:
       type: 'radio'
+      confirmButtonLabel: ok
       question: translate 'div', 'anyAnimals'
       choices: [{
         value: 'yes'
@@ -154,6 +158,7 @@ module.exports =
 
     marking:
       type: 'drawing'
+      confirmButtonLabel: ok
       question: translate 'div', 'whatToDo'
       choices: [{
         type: MagnifierPoint
@@ -210,6 +215,7 @@ module.exports =
 
     allPenguinsMarked:
       type: 'radio'
+      confirmButtonLabel: translate 'span', 'finish'
       question: translate 'div', 'allMarked'
       choices: [{
         value: 'complete'

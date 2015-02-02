@@ -48,6 +48,8 @@ module.exports =
   allMarked: 'Have you marked every penguin you can see in this image, or are there still some left unmarked?'
   yesAllMarked: 'I have marked every penguin'
   notAllMarked: 'There were too many penguins to mark'
+  finish: 'Finish'
+  ok: 'OK'
 
   tutorial:
     welcome: 'Penguin Watch is a citizen science website trying to understand the lives of penguins. We want you to help us mark images taken from nesting sites around Antarctica.'
