@@ -24,4 +24,5 @@ markingSurface.on 'marking-surface:add-tool', (tool) ->
 
   if count > LIMIT
     stopThatDialog.show() unless hasBeenOpened
+    stopThatDialog.el.find('button').focus()
     hasBeenOpened = true
