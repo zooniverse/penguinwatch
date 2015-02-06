@@ -50,6 +50,7 @@ module.exports =
   notAllMarked: 'There were too many penguins to mark'
   finish: 'Finish'
   ok: 'OK'
+  finishMarking: 'Finished Marking'
 
   tutorial:
     welcome: 'Penguin Watch is a citizen science website trying to understand the lives of penguins. We want you to help us mark images taken from nesting sites around Antarctica.'

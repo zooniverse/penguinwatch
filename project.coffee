@@ -158,7 +158,7 @@ module.exports =
 
     marking:
       type: 'drawing'
-      confirmButtonLabel: ok
+      confirmButtonLabel: translate 'span', 'finishMarking'
       question: translate 'div', 'whatToDo'
       choices: [{
         type: MagnifierPoint
