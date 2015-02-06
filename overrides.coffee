@@ -4,6 +4,7 @@ require './auto-choose-penguin-tool'
 require './limit-marks'
 require './show-counts'
 require './attribute-background-image'
+require './confirm-button-label'
 
 GoogleAnalytics = require 'zooniverse/lib/google-analytics'
 analytics = new GoogleAnalytics
