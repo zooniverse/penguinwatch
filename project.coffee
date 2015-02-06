@@ -165,6 +165,7 @@ module.exports =
         value: 'adult'
         label: translate 'div', 'choices.adult'
         color: '#f90'
+        checked: true
       }, {
         type: MagnifierPoint
         value: 'chick'
