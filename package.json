@@ -6,7 +6,7 @@
     "publisssh": "~0.2.4",
     "t7e": "~0.3.1",
     "zooniverse": "0.7.3",
-    "zooniverse-readymade": "0.6.4"
+    "zooniverse-readymade": "0.6.5"
   },
   "scripts": {
     "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --js overrides.coffee --css ./penguin.styl",
