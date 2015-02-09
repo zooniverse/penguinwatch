@@ -5,6 +5,7 @@ require './limit-marks'
 require './show-counts'
 require './attribute-background-image'
 require './confirm-button-label'
+require './task-defaults'
 
 GoogleAnalytics = require 'zooniverse/lib/google-analytics'
 analytics = new GoogleAnalytics
