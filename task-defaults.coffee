@@ -5,3 +5,4 @@ classifyPage = currentProject.classifyPages[0]
   
 classifyPage.el.on decisionTree.LOAD_TASK, ({originalEvent: detail: {task}})->
   task.reset 'yes' if task.key is 'animalsPresent'
+  task.reset 'incomplete' if task.key is 'allPenguinsMarked'
