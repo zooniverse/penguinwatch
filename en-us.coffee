@@ -1,7 +1,7 @@
 module.exports =
   producer: 'Zooniverse'
   title: 'Penguin Watch'
-  summary: '<a id="competition-banner" class="readymade-call-to-action" href="#/competition">Mark penguins today to possibly win the trip of a lifetime</br>to see these amazing little creatures in their natural habitat.</br></br>Find out more about the competition and how to enter here.</a>Monitor Penguins in Remote Regions'
+  summary: '<div id="competition"><div id="competition-button" class="readymade-call-to-action">Mark penguins today to possibly win the trip of a lifetime</br>to see these amazing little creatures in their natural habitat.</br></br>Click here to opt-in to the competition.</div><image class="competition-logo" src="competition/quark_comp_logo.jpg"></div>Monitor Penguins in Remote Regions'
   description: 'Scientists have travelled to some of the coldest areas on the planet to learn more about penguin populations. Help annotate their images of wildlife in Antarctica and the Southern Ocean.'
 
   links:
