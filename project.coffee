@@ -26,7 +26,8 @@ module.exports =
   background: 'penguins-fpo.jpg'
 
   pages: [
-    {'Science': translate 'div', 'science'}
+    {'Science': translate 'div', 'science'},
+    {'Competition': translate 'div', 'competition'}
   ]
 
   externalLinks: buildObject ->

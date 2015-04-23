@@ -24,6 +24,19 @@ body
     color: inherit
     text-decoration: none
 
+#competition-banner
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: 2px solid #8AC007;
+  padding: 20px;
+  margin-bottom: 5%;
+  width: 40%;
+  display: block;
+  a
+    color: inherit
+    text-decoration: none
+
 #readymade
   .readymade-home-page-content
     text-align: center
@@ -31,6 +44,17 @@ body
   &[data-location-hash="#/classify"]
     .readymade-main-stack
       width: 95vw
+
+  [data-readymade-page="competition"] > * // Translated element
+    display: flex
+    padding: 3em 5em
+
+    & > section
+      flex: 5
+
+      & + section
+        flex: 2
+        margin-left: 3vw
 
   [data-readymade-page="science"] > * // Translated element
     background: rgba(white, 0.8)
