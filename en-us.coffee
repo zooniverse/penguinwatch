@@ -19,11 +19,6 @@ module.exports =
     <section>#{require './content/science-sidebar'}</section>
   "
 
-  competition: "
-    <section>#{require './content/competition'}</section>
-    <section>#{require './content/competition-sidebar'}</section>
-  "
-
   anyAnimals: 'Are there any penguins or other animals in this image?'
   yesAnimals: 'Yes'
   noAnimals: 'No, there are no animals present'
