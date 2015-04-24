@@ -6,7 +6,7 @@ require './show-counts'
 require './attribute-background-image'
 require './confirm-button-label'
 require './task-defaults'
-require './competition-geordi'
+require './competition'
 
 GoogleAnalytics = require 'zooniverse/lib/google-analytics'
 analytics = new GoogleAnalytics
