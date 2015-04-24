@@ -12,7 +12,7 @@ exports.logEvent = (userZooniverseId) ->
   eventData =
     tme: Date.now()
     projectToken: 'penguin'
-    userUD: userZooniverseId
+    userID: userZooniverseId
     type: 'competition'
     relatedID: 'opt-in'
 
