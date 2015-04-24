@@ -21,7 +21,7 @@ template = """
         <div class="competition-quark-logo"><img src="./competition/quark-logo.png"></div>
         <div class="competition-small-text">
           <b>The Small Print</b><br>
-          Please note that this competition is being run by Quark Expeditions, and all Quark Expeditions Terms & Conditions <a href="http://info.quarkexpeditions.com/penguinwatch">here</a> apply.
+          Please note that this competition is being run by Quark Expeditions, and all <a href="http://www.quarkexpeditions.com/en/penguin-watch-and-quark-expeditions-competition?_ga=1.211591762.698748156.1429627101">Quark Expeditions Terms & Conditions</a> apply.
           The Zooniverse reserves the right to disqualify any user from the competition if it is determined that they are not performing the markings to the best of their ability in order to gain an advantage in the prize draw. Zooniverse and Quark Expeditions employees, family and friends are not eligible to win the competition. All decisions made by the Zooniverse and Quark Expeditions with regard to competition are final.
         </div>
       </div>
