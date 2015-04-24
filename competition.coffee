@@ -6,21 +6,22 @@ template = """
   <div class="competition">
     <div class="competition-container">
       <div class="competition-header-image"><img src="./competition/official-contest.png"></div>
-      <div class="competition-header-text">By marking penguins today, you could earn the chance of winning the trip of a lifetime to see these amazing little creatures in their natural habitat!</div>
-      <div class="competition-body-text">Between April 25 and May 25, every day that you classify at least 10 photos, you can receive an entry into a prize-drawing to <span class="highlight">win an 11-day Antarctic Explorer: Discovering the 7th Continent expedition with Quark Expeditions®.</span> Simply check the "Enter Competition" button below to participate.</div>
+      <div class="competition-header-text">By marking penguins today, you could earn the chance to win the trip of a lifetime to see these amazing little creatures in their natural habitat!</div>
+      <div class="competition-body-text">Between April 25 and May 25, every day that you classify at least 10 photos, you can receive an entry into a prize-drawing to win an 11-day <span class="highlight">Antarctic Explorer: Discovering the 7th Continent</span> expedition with Quark Expeditions®. Click on "Enter Competition" below to register, and "Learn More" to get more read up on the details of the competition!</div>
 
       <button class="competition-button enter">-</button>
-      <button class="competition-button learn-more">Learn More</button>
+      <a href="http://info.quarkexpeditions.com/penguinwatch" target="_blank">
+        <button class="competition-button learn-more">Learn More</button>
+      </a>
 
       <br><br>
 
       <div class="competition-footer">
+        <div class="competition-footer-text">By participating in this competition, you agree to be contacted by Quark in the event of winning.</div>
         <div class="competition-quark-logo"><img src="./competition/quark-logo.png"></div>
-
-        <div class="competition-footer-text">By opting into this competition, you may be contacted by Quark Expeditions in the event of winning.</div>
-
         <div class="competition-small-text">
           <b>The Small Print</b><br>
+          Please note that this competition is being run by Quark Expeditions, and all Quark Expeditions Terms & Conditions <a href="http://info.quarkexpeditions.com/penguinwatch">here</a> apply.
           The Zooniverse reserves the right to disqualify any user from the competition if it is determined that they are not performing the markings to the best of their ability in order to gain an advantage in the prize draw. Zooniverse and Quark Expeditions employees, family and friends are not eligible to win the competition. All decisions made by the Zooniverse and Quark Expeditions with regard to competition are final.
         </div>
       </div>

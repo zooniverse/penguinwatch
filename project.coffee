@@ -27,7 +27,6 @@ module.exports =
 
   pages: [
     {'Science': translate 'div', 'science'},
-    {'Competition': translate 'div', 'competition'}
   ]
 
   externalLinks: buildObject ->
