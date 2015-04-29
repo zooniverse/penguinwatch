@@ -30,6 +30,7 @@ module.exports =
   ]
 
   externalLinks: buildObject ->
+    @[translate 'span', 'links.faq'] = 'http://talk.penguinwatch.org/#/boards/BPZ0000007'
     @[translate 'span', 'links.talk'] = 'http://talk.penguinwatch.org/'
     @[translate 'span', 'links.blog'] = 'http://penguinlifelines.wordpress.com/'
     @[translate 'span', 'links.twitter'] = 'http://twitter.com/penguin_watch/'
