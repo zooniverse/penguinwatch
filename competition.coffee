@@ -7,7 +7,7 @@ template = """
     <div class="competition-container">
       <div class="competition-header-image"><img src="./competition/official-contest.png"></div>
       <div class="competition-header-text">By marking penguins today, you could earn the chance to win the trip of a lifetime to see these amazing little creatures in their natural habitat!</div>
-      <div class="competition-body-text">Between April 25 and May 25, every day that you classify at least 10 photos, you can receive an entry into a prize-drawing to win an 11-day <span class="highlight">Antarctic Explorer: Discovering the 7th Continent</span> expedition from Quark Expeditions<sup>®</sup>. Click on "Enter Competition" below to register, and "Learn More" to read up on the competition details.
+      <div class="competition-body-text">Between April 25 and May 25, every day that you classify at least 10 photos, you will receive an entry into a prize-drawing to win an 11-day <span class="highlight">Antarctic Explorer: Discovering the 7th Continent</span> expedition from Quark Expeditions<sup>®</sup>. Click on "Enter Competition" below to register, and "Learn More" to read up on the competition details.
         <b>Note:</b> You must be a registered Zooniverse user to participate; if not already registered with Zooniverse, you can do so with the link at the top right of your screen.
       </div>
 
