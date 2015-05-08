@@ -48,9 +48,11 @@ module.exports =
   description: translate 'div', 'description'
   background: 'penguins-fpo.jpg'
 
-  pages: [
-    {'Science': translate 'div', 'science'},
-  ]
+  pages: [{
+    key: 'science'
+    title: translate 'span', 'scienceTitle'
+    content: translate 'div', 'science'
+  }]
 
   externalLinks: buildObject ->
     @[translate 'span', 'links.faq'] = 'http://talk.penguinwatch.org/#/boards/BPZ0000007'
