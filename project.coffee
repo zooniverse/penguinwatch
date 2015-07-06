@@ -86,6 +86,10 @@ module.exports =
     name: 'University College London (UCL)'
     description: translate 'div', 'team.ucl'
   }, {
+    image: './orgs/noaa-fisheries.png'
+    name: 'NOAA Fisheries'
+    description: translate 'div', 'team.noaa'
+  }, {
     image: './orgs/zooniverse.png'
     name: 'Zooniverse'
     url: ['https://www.zooniverse.org/', 'https://www.facebook.com/therealzooniverse', 'https://twitter.com/the_zooniverse', 'https://plus.google.com/+ZooniverseOrgReal', 'https://github.com/zooniverse']
