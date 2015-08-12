@@ -1,6 +1,6 @@
 # Penguins
 
-[http://www.penguinwatch.org]()
+[http://www.penguinwatch.org](http://www.penguinwatch.org)
 
 Prerequisite: [Node.js](https://nodejs.org/)
 
