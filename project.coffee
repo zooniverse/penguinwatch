@@ -2,7 +2,7 @@ Pinpoint = require './pinpoint'
 MagnifierPoint = require 'marking-surface/lib/tools/magnifier-point'
 
 t7e = require 't7e'
-enUs = require './en-us'
+enUs = require './lib/en-us'
 t7e.load enUs
 
 translate = t7e
@@ -10,7 +10,7 @@ translate = t7e
 LangugeManager = require 'zooniverse/lib/language-manager'
 languageManager = new LangugeManager
   translations:
-    en: label: 'English', strings: require './en-us'
+    en: label: 'English', strings: enUs
     ru: label: "русский", strings: './translations/ru.json'
     cs: label: 'Čeština', strings: './translations/cs.json'
 
