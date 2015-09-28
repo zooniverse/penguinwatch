@@ -21,8 +21,8 @@ module.exports =
   userCount: 'volunteers participating'
 
   science: "
-    <section>#{require './content/science'}</section>
-    <section>#{require './content/science-sidebar'}</section>
+    <section>#{require '../content/science'}</section>
+    <section>#{require '../content/science-sidebar'}</section>
   "
 
   anyAnimals: 'Are there any penguins or other animals in this image?'
