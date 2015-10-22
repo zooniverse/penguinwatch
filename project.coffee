@@ -7,8 +7,10 @@ t7e.load enUs
 
 languageManager = new zooniverse.LanguageManager({
   translations: {
-    en: { label: "English", strings: enUs }
-    es: { label: "Español", strings: "./translations/es.json" }
+    en: label: "English", strings: enUs
+    es: label: "Español", strings: "./translations/es.json"
+    ru: label: "русский", strings: './translations/ru.json'		
+    cs: label: 'Čeština', strings: './translations/cs.json'
   }
 })
 
@@ -18,17 +20,6 @@ languageManager.on('change-language', (e, code, languageStrings) ->
 )
 
 translate = t7e
-
-LangugeManager = require 'zooniverse/lib/language-manager'
-languageManager = new LangugeManager
-  translations:
-    en: label: 'English', strings: enUs
-    ru: label: "русский", strings: './translations/ru.json'
-    cs: label: 'Čeština', strings: './translations/cs.json'
-
-languageManager.on 'change-language', (e, code, strings) ->
-  t7e.load strings
-  t7e.refresh()
 
 # Let's make translating keys easier.
 buildObject = (fn) ->
