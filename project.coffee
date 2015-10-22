@@ -9,7 +9,7 @@ languageManager = new zooniverse.LanguageManager({
   translations: {
     en: label: "English", strings: enUs
     es: label: "Español", strings: "./translations/es.json"
-    ru: label: "русский", strings: './translations/ru.json'		
+    # ru: label: "русский", strings: './translations/ru.json'
     cs: label: 'Čeština', strings: './translations/cs.json'
   }
 })
