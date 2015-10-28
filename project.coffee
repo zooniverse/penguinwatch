@@ -5,18 +5,21 @@ t7e = require 't7e'
 enUs = require './lib/en-us'
 t7e.load enUs
 
-translate = t7e
-
-LangugeManager = require 'zooniverse/lib/language-manager'
-languageManager = new LangugeManager
-  translations:
-    en: label: 'English', strings: enUs
-    ru: label: "русский", strings: './translations/ru.json'
+languageManager = new zooniverse.LanguageManager({
+  translations: {
+    en: label: "English", strings: enUs
+    es: label: "Español", strings: "./translations/es.json"
+    # ru: label: "русский", strings: './translations/ru.json'
     cs: label: 'Čeština', strings: './translations/cs.json'
+  }
+})
 
-languageManager.on 'change-language', (e, code, strings) ->
-  t7e.load strings
+languageManager.on('change-language', (e, code, languageStrings) ->
+  t7e.load(languageStrings)
   t7e.refresh()
+)
+
+translate = t7e
 
 # Let's make translating keys easier.
 buildObject = (fn) ->
@@ -36,9 +39,11 @@ module.exports =
   description: translate 'div', 'description'
   background: 'penguins-fpo.jpg'
 
-  pages: [
-    {'Science': translate 'div', 'science'},
-  ]
+  pages: [{
+    key: 'science'
+    title: translate 'span', 'scienceTitle'
+    content: translate 'div', 'science'
+  }]
 
   externalLinks: buildObject ->
     @[translate 'span', 'links.faq'] = 'http://talk.penguinwatch.org/#/boards/BPZ0000007'

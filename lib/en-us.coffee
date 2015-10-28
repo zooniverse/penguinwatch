@@ -20,6 +20,7 @@ module.exports =
   classificationCount: 'images classified'
   userCount: 'volunteers participating'
 
+  scienceTitle: 'Science'
   science: "
     <section>#{require '../content/science'}</section>
     <section>#{require '../content/science-sidebar'}</section>

@@ -2,17 +2,20 @@
   "name": "penguins",
   "version": "0.0.1",
   "dependencies": {
-    "jqueryify": "1.8.0",
+    "jquery": "2.1.0",
     "marking-surface": "^0.6.4",
-    "publisssh": "~0.2.4",
+    "publisssh": "~1.0.0",
     "t7e": "~0.3.1",
     "translator-seed": "^0.1.2",
-    "zooniverse": "0.7.3",
-    "zooniverse-readymade": "0.6.5"
+    "zooniverse": "0.7.5",
+    "zooniverse-readymade": "0.8.3",
+    "stack-of-pages": "0.1.5",
+    "zooniverse-decision-tree": "0.0.2"
   },
   "scripts": {
     "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --js overrides.coffee --css ./penguin.styl",
     "deploy": "npm run build && publisssh ./build zooniverse-static/www.penguinwatch.org && npm run clean-up",
+    "beta": "npm run build && publisssh ./build zooniverse-static/www.penguinwatch.org/beta && npm run clean-up",
     "build": "zooniverse-readymade build --force --output ./build --js overrides.coffee --css ./penguin.styl",
     "clean-up": "rm -rf ./build",
     "deploy-locale": "seed-translation --project penguin --env production"
