@@ -26,3 +26,6 @@ markingSurface.on 'marking-surface:add-tool', (tool) ->
     stopThatDialog.show() unless hasBeenOpened
     stopThatDialog.el.find('button').focus()
     hasBeenOpened = true
+  
+  setTimeout => # ewwwwwww
+    t7e.refresh()
