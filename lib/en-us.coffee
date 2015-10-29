@@ -76,6 +76,9 @@ module.exports =
     chick: 'Chick'
 
   team:
+    organisations: 'Organisations'
+    scientists: 'Scientists'
+    developers: 'Developers'
     oxford: '''Our science team members are ecologists in the Department of Zoology and computer vision engineers in the Department of Engineering Science. The University of Oxford is a collegiate research institute, which strives to bring together leading academics and students across subjects and from different cultures and countries to foster an intense interdisciplinary approach that inspires outstanding research achievement.'''
     aad: '''Researchers at the Australian Antarctic Division pioneered the use of time-lapse cameras in Antarctica to study the population dynamics of Adélie penguins in East Antarctica. The AAD is a leading research institution, which aims to advance Australia’s strategic, scientific, environmental and economic interests in Antarctica and the Southern Ocean.'''
     darwin: '''Generous funding by the Darwin Initiative has played an integral part in the start-up and continuation of this project. The Darwin Initiative is a UK government grants scheme that helps to protect biodiversity and the natural environment through locally based projects worldwide.'''
