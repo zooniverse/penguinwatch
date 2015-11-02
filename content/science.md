@@ -39,7 +39,7 @@ Specifically, we aim...
 
 - To determine changes in the timing of breeding of populations over time (eg. arrival and departure dates, hatching dates, incubation period, guard and post-guard periods).
 
-  ![The general annual life cycle of a penguin." /><](./breeding-cycle.png)
+  ![The general annual life cycle of a penguin](./breeding-cycle.png)
 
 - To compare nest survival rates between populations and determine whether low nest survival is linked to anthropogenic or ecological factors present near the colonies.
 
