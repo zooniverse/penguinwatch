@@ -106,7 +106,7 @@ module.exports =
         color: '#09f'
         details: [{
           type: 'radio'
-          question: 'What is this?'
+          question: translate 'span', 'choices.whatIsIt'
           key: 'size'
           choices: [{
             value: 'snowySheathbill'

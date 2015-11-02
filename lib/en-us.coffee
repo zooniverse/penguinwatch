@@ -37,6 +37,7 @@ module.exports =
     chick: 'Chicks'
     eggs: 'Eggs'
     other: 'Other'
+    whatIsIt: 'What is this?'
     snowySheathbill: 'Snowy sheathbill'
     southernGiantPetrel: 'Southern giant petrel'
     brownSkua: 'Brown skua'
