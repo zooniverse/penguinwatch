@@ -33,8 +33,15 @@ buildObject = (fn) ->
 # decision tree button text
 ok = translate 'span', 'ok'
 
+[apiHost, apiProxyPath] = if window.location.hostname is 'www.penguinwatch.org'
+  ['http://www.penguinwatch.org', '/_ouroboros_api/proxy']
+else
+  [null, null]
+
 module.exports =
   id: 'penguin'
+  apiHost: apiHost
+  apiProxyPath: apiProxyPath
 
   producer: translate 'div', 'producer'
   title: translate 'div', 'title'
