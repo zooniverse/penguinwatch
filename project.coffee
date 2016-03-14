@@ -34,7 +34,7 @@ buildObject = (fn) ->
 ok = translate 'span', 'ok'
 
 [apiHost, apiProxyPath] = if window.location.hostname is 'www.penguinwatch.org'
-  ['http://www.penguinwatch.org', '/_ouroboros_api/proxy']
+  ['https://www.penguinwatch.org', '/_ouroboros_api/proxy']
 else
   [null, null]
 
