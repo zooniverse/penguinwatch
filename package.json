@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "2.1.0",
     "marking-surface": "^0.6.4",
-    "publisssh": "~0.2.6",
+    "publisssh": "~1.1.0",
     "t7e": "~0.3.1",
     "translator-seed": "^0.1.2",
     "zooniverse": "0.7.5",
@@ -14,8 +14,8 @@
   },
   "scripts": {
     "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --js overrides.coffee --css ./penguin.styl",
-    "deploy": "npm run build && publisssh ./build zooniverse-static/www.penguinwatch.org && npm run clean-up",
-    "beta": "npm run build && publisssh ./build zooniverse-static/www.penguinwatch.org/beta && npm run clean-up",
+    "deploy": "npm run build && publisssh ./build zooniverse-static/www.penguinwatch.org --force && npm run clean-up",
+    "beta": "npm run build && publisssh ./build zooniverse-static/www.penguinwatch.org/beta --force && npm run clean-up",
     "build": "zooniverse-readymade build --force --output ./build --js overrides.coffee --css ./penguin.styl",
     "clean-up": "rm -rf ./build",
     "deploy-locale": "seed-translation --project penguin --env production"
