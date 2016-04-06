@@ -1,8 +1,8 @@
 module.exports =
   producer: 'Zooniverse'
   title: 'Penguin Watch'
-  summary: 'Monitor Penguins in Remote Regions'
-  description: 'Scientists have travelled to some of the coldest areas on the planet to learn more about penguin populations. Help annotate their images of wildlife in Antarctica and the Southern Ocean.'
+  summary: 'Welcome to PenguinWatch 2.0!'
+  description: 'We now monitor over 100 sites! We need your help more than ever - to help monitor penguins, click "get started". If you are a school or educational site and you want to adopt and help us with a specific colony and get data feedbacks, please register (sign up) and contact us!'
 
   links:
     home: 'Home'
