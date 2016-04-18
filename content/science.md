@@ -23,7 +23,7 @@ Camera technology affords us the ability to deploy ‘artificial ecologists’ i
 However, along with the infinite possibilities of cameras as a monitoring tool comes an enormous amount of data in the form of hundreds of thousands of images. Each of our 50 cameras takes between 8 to 96 images daily throughout the entire year. In order to turn this massive database of information into a data set that we can use to answer hypotheses, we need your collective help.
 
 <figure>
-  <video controls="controls">
+  <video controls="controls" preload="none">
     <source src="./time-lapse.webm"></source>
     <source src="./time-lapse.mp4"></source>
   </video>
