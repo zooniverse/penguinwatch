@@ -1,16 +1,19 @@
 {
   "name": "penguins",
   "version": "0.0.1",
+  "engines": {
+      "node": "0.10.x"
+  },
   "dependencies": {
     "jquery": "2.1.0",
     "marking-surface": "^0.6.4",
     "publisssh": "~1.1.0",
-    "t7e": "~0.3.1",
+    "stack-of-pages": "0.1.5",
+    "t7e": "~0.4.0",
     "translator-seed": "^0.1.2",
     "zooniverse": "~0.8.9",
-    "zooniverse-readymade": "~1.1.2",
-    "stack-of-pages": "0.1.5",
-    "zooniverse-decision-tree": "0.0.2"
+    "zooniverse-decision-tree": "0.0.2",
+    "zooniverse-readymade": "~1.1.2"
   },
   "scripts": {
     "start": "zooniverse-readymade serve --port 3665 --project ./project.coffee --js overrides.coffee --css ./penguin.styl",
