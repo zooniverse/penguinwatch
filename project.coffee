@@ -189,7 +189,7 @@ module.exports =
       label: translate 'span', 'fieldGuide.chinstrap'
       image: './field-guide/chinstrap.jpg'
     }, {
-      label: translate 'span', 'fieldGuide.Rockhopper'
+      label: translate 'span', 'fieldGuide.rockhopper'
       image: './field-guide/rockhopper.jpg'
     }, {
       label: translate 'span', 'fieldGuide.macaroni'
