@@ -115,7 +115,7 @@ module.exports =
     talk: 'After classifying, you can discuss a specific image or the whole project with the science team and other volunteers by visiting Talk. You can also share your favorites with your friends!'
 
   fieldGuide:
-    name: 'FieldGuide'
+    parade: 'Parade'
     gentoo: 'Gentoo'
     chinstrap: 'Chinstrap'
     adelie: 'Adélie'

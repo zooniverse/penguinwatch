@@ -175,7 +175,7 @@ module.exports =
   }]
 
   examples: [{
-    label: translate 'span', 'fieldGuide.name'
+    label: translate 'span', 'fieldGuide.parade'
     figures: [{
       label: translate 'span', 'fieldGuide.king'
       image: './field-guide/king.jpg'
