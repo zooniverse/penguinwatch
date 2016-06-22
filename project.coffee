@@ -167,6 +167,12 @@ module.exports =
     image: './tutorial/marked.jpg'
     content: translate 'p', 'tutorial.removing'
   }, {
+    image: './tutorial/distant.jpg'
+    content: translate 'p', 'tutorial.distant'
+  }, {
+    image: './tutorial/blurred.jpg'
+    content: translate 'p', 'tutorial.blurred'
+  }, {
     image: './tutorial/other.jpg'
     content: translate 'p', 'tutorial.other'
   }, {
