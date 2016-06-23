@@ -34,17 +34,20 @@ body
     text-align: center
 
   .readymade-field-guide-container
-      position: absolute
-      top: .5em
-      left: 1em
-      flex: 2
-      min-width: 25%
-      width: 400px
-      transition: left 1s
-      z-index: 10
+    position: absolute
+    top: .5em
+    left: 1em
+    flex: 2
+    min-width: 25%
+    width: 400px
+    transition: left 1s
+    z-index: 10
 
-      &[aria-hidden=true]
-        left: -100em
+    &[aria-hidden=true]
+      left: -100em
+    
+    .readymade-field-guide-examples
+      flex-direction: column
 
   &[data-location-hash="#/classify"]
     .readymade-main-stack
