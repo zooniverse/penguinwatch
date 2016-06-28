@@ -108,13 +108,10 @@ module.exports =
   finishMarking: 'Finished Marking'
 
   tutorial:
-    welcome: 'Penguin Watch is a citizen science website trying to understand the lives of penguins. We want you to help us mark images taken from nesting sites around Antarctica.'
-    marking: 'Individually mark <span style="color: #f90;">adult penguins</span>, <span style="color: #6f0;">chicks</span>, and <span style="color: #cc0;">eggs</span> in the image by clicking on the center of each one\'s visible area. Sometimes just a head or tail is showing, other times you\'ll be able to mark the center of the chest/torso. We sometimes need you to mark up to 30 of each&thinsp;&mdash;&thinsp;and you can mark more if you want to.'
-    removing: 'Click and drag marks to move them to the center of each animal. Remove any accidental marks using the black-and-white cross.'
-    distant: '1) Is it so tiny that you are not sure what it is? Please do not mark it and finish with the too many penguins to mark option.</br>2) If the image only shows distant penguins, please mark one before choosing the too many to mark option.'
-    blurred: "The Antarctic weather sometimes covers all or part of the camera. On the left is and example of \"I can't tell\", rain and snow obscure the lens completely. On the right the picture is very dark/blurry but you can see something to mark: If you cannot see all of the rookery, please mark as many as possible then click on the \"There were too many penguins to mark\" button to finish."
+    marking: 'Individually mark <span style="color: #f90;">adult penguins</span>, <span style="color: #6f0;">chicks</span>, and <span style="color: #cc0;">eggs</span> in the image by clicking on the centre of each one\'s visible area.</br>Click and drag marks to move them to the centre of each animal.</br>Remove any accidental marks using the black-and-white cross.'
+    distant: 'Too small to count? Ignore any penguins in the background like 1 & 2.</br>Mark any in the foreground and then click \"too many penguins to mark\".'
+    blurred: "Bad weather? Just click \"I can't tell\".</br>Partially obscured? Click as many as you can."
     other: 'Mark any other animals too so we can see how often they are near the penguin nest.'
-    talk: 'After classifying, you can discuss a specific image or the whole project with the science team and other volunteers by visiting Talk. You can also share your favorites with your friends!</br></br>Finally, please read the FAQs for good tips on marking and to find interesting information to help you.'
 
   fieldGuide:
     gentoo: 'Gentoo'

@@ -158,14 +158,8 @@ module.exports =
       }]
 
   tutorialSteps: [{
-    image: './tutorial/intro.jpg'
-    content: translate 'p', 'tutorial.welcome'
-  }, {
     image: './tutorial/marked.jpg'
     content: translate 'p', 'tutorial.marking'
-  }, {
-    image: './tutorial/marked.jpg'
-    content: translate 'p', 'tutorial.removing'
   }, {
     image: './tutorial/distant.jpg'
     content: translate 'p', 'tutorial.distant'
@@ -175,9 +169,6 @@ module.exports =
   }, {
     image: './tutorial/other.jpg'
     content: translate 'p', 'tutorial.other'
-  }, {
-    image: './tutorial/talk.jpg'
-    content: translate 'p', 'tutorial.talk'
   }]
 
   examples: [{
