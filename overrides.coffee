@@ -26,6 +26,11 @@ FieldGuide::template = (examples) -> "
 currentProject = require 'zooniverse-readymade/current-project'
 classify_page = currentProject.classifyPages[0]
 
+tag = document.createElement('script')
+tag.src = './you_tube_iframe_player.js'
+firstScriptTag = document.getElementsByTagName('script')[0]
+firstScriptTag.parentNode.insertBefore tag, firstScriptTag
+
 require './show-project-details'
 require './show-roi'
 require './auto-choose-penguin-tool'
