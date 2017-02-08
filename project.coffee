@@ -15,6 +15,8 @@ languageManager = new zooniverse.LanguageManager({
     # ru: label: "русский", strings: './translations/ru.json'
     cs: label: 'Čeština', strings: './translations/cs.json'
     el: label: 'Ελληνικά', strings: './translations/el.json'
+    it: label: 'Italiano', strings: './translations/it.json'
+    zh_tw: label: '繁體中文', strings: './translations/zh-tw.json'
   }
 })
 
