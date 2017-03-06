@@ -60,10 +60,12 @@ APIInfoContainer = require './readymade-temporary/api-info-container'
 
 # Add a banner for the email challenge
 TARGET = 250000
+INITIAL_OFFSET = 25000  #Values provided by @grant based on existing stats
+
 classifications = new APIInfoContainer
   href: "/projects/#{currentProject.id}"
   template: """
-    <span data-readymade-info-key="classification_count">···</span>
+    <span data-readymade-info-key="classification_count" data-readymade-info-offset="#{INITIAL_OFFSET}" data-readymade-info-isNumeric="true">···</span>
   """
 banner = """
   <div class="challenge">
