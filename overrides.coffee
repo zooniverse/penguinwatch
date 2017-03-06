@@ -44,3 +44,36 @@ GoogleAnalytics = require 'zooniverse/lib/google-analytics'
 analytics = new GoogleAnalytics
   account: 'UA-1224199-57'
   domain: 'www.penguinwatch.org'
+
+
+
+# TEMPORARY ADDITION
+# Requested by @grant on 2017.03.06
+# based on https://github.com/zooniverse/sciencegossip/tree/challenge/readymade
+# After two weeks, please do the following:
+# * Revert overrides.coffee
+# * Rever penguins.styl
+# * Delete /readymade-temporary
+# --------------------------------
+# Add some API stats to the home page
+APIInfoContainer = require './readymade-temporary/api-info-container'
+
+# Add a banner for the email challenge
+TARGET = 250000
+classifications = new APIInfoContainer
+  href: "/projects/#{currentProject.id}"
+  template: """
+    <span data-readymade-info-key="classification_count">···</span>
+  """
+banner = """
+  <div class="challenge">
+    <p> classifications submitted. Help us reach <b>#{TARGET.toLocaleString()}</b> classifications.</p>
+  </div>
+  """
+
+$('#wrapper')
+  .prepend banner
+  .find '.challenge p'
+  .prepend classifications.el
+  
+# --------------------------------
