@@ -52,7 +52,8 @@ analytics = new GoogleAnalytics
 # based on https://github.com/zooniverse/sciencegossip/tree/challenge/readymade
 # After two weeks, please do the following:
 # * Revert overrides.coffee
-# * Rever penguins.styl
+# * Revert lib/en-us.coffee
+# * Revert penguins.styl
 # * Delete /readymade-temporary
 # --------------------------------
 # Add some API stats to the home page
@@ -60,7 +61,7 @@ APIInfoContainer = require './readymade-temporary/api-info-container'
 
 # Add a banner for the email challenge
 TARGET = 250000
-INITIAL_OFFSET = 25000  #Values provided by @grant based on existing stats
+INITIAL_OFFSET = 25000 - 4772323  #Values provided by @grant based on existing stats
 
 classifications = new APIInfoContainer
   href: "/projects/#{currentProject.id}"
@@ -69,13 +70,15 @@ classifications = new APIInfoContainer
   """
 banner = """
   <div class="challenge">
-    <p> classifications submitted. Help us reach <b>#{TARGET.toLocaleString()}</b> classifications.</p>
+    <a class="challenge-logo" href="https://www.britishscienceassociation.org/Event/british-science-week-2017" target="_blank"><img src="./british-science-week-2017.jpg"></a>
+    <p class="challenge-first"> classifications submitted during our British Science Week Challenge.</p>
+    <p>Help us reach <b>#{TARGET.toLocaleString()}</b> classifications by 19 March 2017!</p>
   </div>
   """
 
 $('#wrapper')
   .prepend banner
-  .find '.challenge p'
+  .find '.challenge-first'
   .prepend classifications.el
   
 # --------------------------------

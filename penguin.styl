@@ -247,7 +247,8 @@ body
   based on https://github.com/zooniverse/sciencegossip/tree/challenge/readymade
   After two weeks, please do the following:
   * Revert overrides.coffee
-  * Rever penguins.styl
+  * Revert lib/en-us.coffee
+  * Revert penguins.styl
   * Delete /readymade-temporary
   --------------------------------
 */
@@ -262,6 +263,24 @@ body
   border-radius: 1em
   padding: 1em
   text-align: center
+  
+  p
+    margin: 0.2em 0
+    padding: 0
+    
+  .readymade-api-info-container
+    margin: 0
+
+  .challenge-logo
+    display: inline-block
+    width: 8em
+    margin: 0.2em auto
+
+    img
+      display: block
+      width: 100%
+      border-radius: 1em
+      overflow: hidden
 /*
   --------------------------------
 */

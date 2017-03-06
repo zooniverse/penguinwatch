@@ -17,7 +17,7 @@ module.exports =
     facebook: '<i class="fa fa-facebook-square fa-lg"></i>'
     google: '<i class="fa fa-google-plus fa-lg"></i>'
 
-  classificationCount: 'images classified'
+  classificationCount: 'total images classified'
   userCount: 'volunteers participating'
 
   scienceTitle: 'Science'
