@@ -76,7 +76,7 @@ banner = """
   </div>
   """
 
-$('#wrapper')
+$('.readymade-home-page')
   .prepend banner
   .find '.challenge-first'
   .prepend classifications.el
