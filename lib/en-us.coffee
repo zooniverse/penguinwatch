@@ -2,7 +2,7 @@ module.exports =
   producer: 'Zooniverse'
   title: 'Penguin Watch'
   summary: 'Welcome to PenguinWatch 2.0!'
-  description: 'We now monitor over 100 sites! We need your help more than ever - to help monitor penguins, click "get started". If you are a school or educational site and you want to adopt and help us with a specific colony and get data feedbacks, please register (sign up) and contact us!'
+  description: 'We now monitor over 100 sites! We need your help more than ever - to help monitor penguins, click "get started". If you are a school or educational institution and would like to receive one of our Penguin Watch information packs, please email <a href="mailto:schools@penguinwatch.org">schools@penguinwatch.org</a>'
 
   links:
     home: 'Home'
@@ -148,3 +148,7 @@ module.exports =
     allen: '''Web developer for the Zooniverse, enjoys building things on the internet while listening to funky tunes.'''
     lintott: '''Astronomer and founder of both Galaxy Zoo and the Zooniverse that grew from it, Chris is interested in how galaxies form and evolve, how citizen science can change the world, and whether the Chicago Fire can get their act together.'''
     simpson: '''Robert is a researcher and web developer working in Oxford. He has a PhD is in astrophysics from Cardiff and has been hacking astronomy since 2004. He is the Communications Lead for the Zooniverse and is also PI of the Milky Way Project.'''
+
+  contact:
+    contactUs: '''Contact Us'''
+    contactUsMessage: '''The Penguin Watch research team is very small, and often working in the field in Antarctica! If you need to contact them, drop them a line at <a href="mailto:contact@penguinwatch.org">contact@penguinwatch.org</a> and they will try and get back to you when they can.'''

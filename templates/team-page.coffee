@@ -1,3 +1,5 @@
+translate = require 't7e'
+
 module.exports = (context) ->
   template = -> "
     <div class='readymade-team-page'>
@@ -64,7 +66,13 @@ module.exports = (context) ->
             ").join '\n'}-->
           ").join '\n'}
         </div>
+  
       ").join '\n'}
+
+      <div class='contact'>
+        <h2 class='readymade-team-group-title'>#{translate 'span', 'contact.contactUs'}</h2>
+        <p>#{translate 'contact.contactUsMessage'}</p>
+      </div>
     </div>
   "
   template.call context
