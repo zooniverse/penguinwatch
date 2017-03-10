@@ -152,3 +152,4 @@ module.exports =
   contact:
     contactUs: '''Contact Us'''
     contactUsMessage: '''The Penguin Watch research team is very small, and often working in the field in Antarctica! If you need to contact them, drop them a line at <a href="mailto:contact@penguinwatch.org">contact@penguinwatch.org</a> and they will try and get back to you when they can.'''
+    contactUsSchools: '''If you are a school or educational institution and would like to download one of our Penguin Watch information packs, please <a href="https://static.zooniverse.org/www.penguinwatch.org/downloads/PenguinWatch_Schools.zip">click here</a>. For further information, email <a href="mailto:schools@penguinwatch.org">schools@penguinwatch.org</a>'''
