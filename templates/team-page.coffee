@@ -71,8 +71,8 @@ module.exports = (context) ->
 
       <div class='contact'>
         <h2 class='readymade-team-group-title'>#{translate 'span', 'contact.contactUs'}</h2>
-        <p>#{translate 'contact.contactUsMessage'}</p>
-        <p>#{translate 'contact.contactUsSchools'}</p>
+        #{translate 'p', 'contact.contactUsMessage'}
+        #{translate 'p', 'contact.contactUsSchools'}
       </div>
     </div>
   "
