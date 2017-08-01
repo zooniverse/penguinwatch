@@ -144,6 +144,10 @@ module.exports =
             value: 'shipsVessels'
             image: './other-animals/ships.jpg'
             label: translate 'div', 'choices.shipsVessels'
+          }, {
+            value: 'cormntSealVultr'
+            image: './other-animals/cormorant-seal-turkeyvulture.jpg'
+            label: translate 'div', 'choices.cormorantSealTurkeyvulture'
           }]
         }]
       }]

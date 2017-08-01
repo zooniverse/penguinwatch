@@ -88,6 +88,7 @@ module.exports =
     kelpGull: 'Kelp gull'
     humans: 'Humans'
     shipsVessels: 'Ships/vessels'
+    cormorantSealTurkeyvulture: 'Cormorants, Seals, Turkey Vultures.<br/>Place the mark, and just click OK'
 
   limitNumberOfMarks: '''
     You've marked 30. Feel free to move on to the next image.
