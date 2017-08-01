@@ -173,6 +173,9 @@ module.exports =
   }, {
     image: './tutorial/other.jpg'
     content: translate 'p', 'tutorial.other'
+  }, {
+    image: './tutorial/nonOther.jpg'
+    content: translate 'p', 'tutorial.nonOther'
   }]
 
   examples: [{

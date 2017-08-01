@@ -109,6 +109,7 @@ module.exports =
     distant: 'Too small to count? Ignore any penguins in the background like 1 & 2.</br>Mark any in the foreground and then click \"too many penguins to mark\".'
     blurred: "Bad weather? Just click \"I can't tell\".</br>Partially obscured? Click as many as you can."
     other: 'Mark the other animals shown above so that we can see how often they are near the penguin nest.'
+    nonOther: "Mark the other animals shown here so we can see how often they appear too. Use the ‘other list’ blue circle. Make <strong>no</strong> choice from the list and click ‘OK’. Marking tips are in <a href='https://talk.penguinwatch.org/#/boards/BPZ0000007'>FAQ</a>."
 
   fieldGuide:
     parade: 'Parade'
