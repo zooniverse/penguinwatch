@@ -108,7 +108,7 @@ module.exports =
     marking: 'Individually mark <span style="color: #f90;">adult penguins</span>, <span style="color: #6f0;">chicks</span>, and <span style="color: #cc0;">eggs</span> in the image by clicking on the centre of each one\'s visible area.</br>Click and drag marks to move them to the centre of each animal.</br>Remove any accidental marks using the black-and-white cross.'
     distant: 'Too small to count? Ignore any penguins in the background like 1 & 2.</br>Mark any in the foreground and then click \"too many penguins to mark\".'
     blurred: "Bad weather? Just click \"I can't tell\".</br>Partially obscured? Click as many as you can."
-    other: 'Mark any other animals too so we can see how often they are near the penguin nest.'
+    other: 'Mark the other animals shown above so that we can see how often they are near the penguin nest.'
 
   fieldGuide:
     parade: 'Parade'
