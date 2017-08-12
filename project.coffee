@@ -144,6 +144,10 @@ module.exports =
             value: 'shipsVessels'
             image: './other-animals/ships.jpg'
             label: translate 'div', 'choices.shipsVessels'
+          }, {
+            value: 'cormntSealVultr'
+            image: './other-animals/cormorant-seal-turkeyvulture.jpg'
+            label: translate 'div', 'choices.cormorantSealTurkeyvulture'
           }]
         }]
       }]
@@ -173,6 +177,9 @@ module.exports =
   }, {
     image: './tutorial/other.jpg'
     content: translate 'p', 'tutorial.other'
+  }, {
+    image: './tutorial/nonOther.jpg'
+    content: translate 'p', 'tutorial.nonOther'
   }]
 
   examples: [{
